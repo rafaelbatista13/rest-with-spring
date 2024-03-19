@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "br.com.estudo.Application",
+            "projectName": "rest-with-spring"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-RestWithSpringApplication<rest-with-spring>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

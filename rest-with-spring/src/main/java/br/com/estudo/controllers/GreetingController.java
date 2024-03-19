@@ -1,10 +1,12 @@
-package br.com.restwithspring;
+package br.com.estudo.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import br.com.estudo.Greeting;
 
 @RestController
 public class GreetingController {
