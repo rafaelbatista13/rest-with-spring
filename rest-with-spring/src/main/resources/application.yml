@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: rest-with-spring
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: admin123
+        url: jdbc:mysql://localhost:3306/rest_with_spring_estudo?useTimeZone=true&serverTimezone=UTC
+    jpa:
+        show-sql: false
+        hibernate:
+            ddl-auto: update
+        open-in-view: true
