@@ -1,40 +1,18 @@
-package br.com.estudo.entities;
+package br.com.estudo.data.vo.v1;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+public class PersonVO {
 
-@Entity
-@Table(name = "person")
-public class Person {
-
-    public Person(long id, String firstName, String lastName, String address, String gender) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.gender = gender;
-    }
-
-    @Id
-    @GeneratedValue
     private long id;
 
-    @Column(name = "first_name", nullable = false)
     private String firstName;
 
-    @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(nullable = false)
     private String address;
 
-    @Column(nullable = false)
     private String gender;
 
-    public Person() {
+    public PersonVO() {
     }
 
     public long getId() {
@@ -97,7 +75,7 @@ public class Person {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Person other = (Person) obj;
+        PersonVO other = (PersonVO) obj;
         if (id != other.id)
             return false;
         if (firstName == null) {
