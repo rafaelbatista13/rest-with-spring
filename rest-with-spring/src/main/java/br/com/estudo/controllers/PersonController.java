@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.estudo.data.vo.v1.PersonVO;
 import br.com.estudo.services.PersonServices;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
 @RequestMapping(path = "/person")
+@Tag(name = "People", description = "Manage people")
 
 public class PersonController {
 

@@ -9,5 +9,9 @@ spring:
     jpa:
         show-sql: false
         hibernate:
-            ddl-auto: update
+            ddl-auto: none
         open-in-view: true
+springdoc:
+    pathsToMatch: /api/**/**
+    swagger-ui:
+        use-root-path: true

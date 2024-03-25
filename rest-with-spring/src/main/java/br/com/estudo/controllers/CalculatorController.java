@@ -2,6 +2,7 @@ package br.com.estudo.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.estudo.exceptions.ResourceNotFoundException;
@@ -9,6 +10,7 @@ import br.com.estudo.math.SimpleMath;
 import br.com.estudo.util.FormatHelper;
 
 @RestController
+@RequestMapping(path = "calculator")
 public class CalculatorController {
 
     @GetMapping("/sum/{numberOne}/{numberTwo}")
